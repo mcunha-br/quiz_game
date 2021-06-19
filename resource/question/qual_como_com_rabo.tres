@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual animal que come com o rabo?"
+type = 0
+options = [ "Cachorro", "Gato", "Todos", "Nenhum" ]
+correct = "Todos"
