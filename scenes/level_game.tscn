@@ -145,4 +145,18 @@ stream = ExtResource( 5 )
 [node name="audio_incorrect" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 
+[node name="txt_timer" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -207.0
+margin_right = 208.0
+margin_bottom = 83.0
+text = "10"
+align = 1
+valign = 1
+
+[node name="timer" type="Timer" parent="."]
+autostart = true
+
 [connection signal="pressed" from="game_over/button_restart" to="." method="_on_button_restart_pressed"]
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
